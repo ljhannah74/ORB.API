@@ -25,10 +25,9 @@ public partial class OrbDatabaseContext : DbContext
     {
         modelBuilder.Entity<Orb>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ORB");
+            entity.ToTable("ORB");
 
+            entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.AssessorPwd).HasColumnName("assessor_pwd");
             entity.Property(e => e.AssessorUrl).HasColumnName("assessor_url");
             entity.Property(e => e.AssessorUser).HasColumnName("assessor_user");

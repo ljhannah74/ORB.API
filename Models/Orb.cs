@@ -5,6 +5,8 @@ namespace orb.api.Models;
 
 public partial class Orb
 {
+    public int Id { get; set; }
+
     public string? State { get; set; }
 
     public string? County { get; set; }
