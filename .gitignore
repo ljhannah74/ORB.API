@@ -48,3 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Angular build files
+bin/
+obj/
