@@ -1,6 +1,0 @@
-@orb.api_HostAddress = http://localhost:5100
-
-GET {{orb.api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
