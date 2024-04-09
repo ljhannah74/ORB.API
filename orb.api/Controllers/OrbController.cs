@@ -10,7 +10,7 @@ public class OrbController
 {
     private readonly IOrbDAL _dal;
 
-    public OrbController(OrbDAL dal) 
+    public OrbController(IOrbDAL dal) 
     {
         _dal = dal;
     }
