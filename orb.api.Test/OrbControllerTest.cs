@@ -25,4 +25,14 @@ public class OrbControllerTest
 
         Assert.Equal(3, states.Count);
     }
+
+    [Fact]
+    public void GetCounties_WhenCalled_ReturnsData()
+    {
+        var okResult = _controller.GetCountiesByState("PA");
+
+        var counties = Assert.IsType<List<CountyDTO>>(okResult.Value);
+
+        Assert.Equal(2, counties.Count);
+    }
 }
