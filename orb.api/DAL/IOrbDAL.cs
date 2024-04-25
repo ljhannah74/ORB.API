@@ -6,4 +6,5 @@ public interface IOrbDAL
 {
     List<StateDTO> GetStates();
     List<CountyDTO> GetCountiesByState(string stateName);
+    OrbDTO GetOrbByCountyState(string stateName, string countyName);
 }

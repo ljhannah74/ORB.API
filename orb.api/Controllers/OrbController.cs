@@ -30,4 +30,11 @@ public class OrbController
         var counties = _dal.GetCountiesByState(state);
         return counties;
     }
+
+    //GET: api/orb/PA/ALLEGHENY
+    [HttpGet("{state}/{county}")]
+    public ActionResult<OrbDTO> GetOrbByStateCounty(string state, string county)
+    {
+        return _dal.GetOrbByCountyState(state, county);
+    }
 }
